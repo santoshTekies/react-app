@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <h1>Learning Github with React+Vite App Example.</h1>
       <div className="card">
-        <button onClick={addTaskHandler}> <b>+</b> Task</button>
+        <button className="btn-add-task" onClick={addTaskHandler}> <b>+</b> Task</button>
         {taskList?.map(task => (<Task key={task.taskId} title={task.title} text={task.text}/>))}
       </div>
     </div>
